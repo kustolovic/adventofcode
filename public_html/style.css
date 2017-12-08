@@ -1,0 +1,21 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 12px;
+  background: #888892;
+  color: white;
+  font-weight: normal;
+}
+a:hover {
+  background-color: #555560;
+}
