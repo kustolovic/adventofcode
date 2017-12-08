@@ -1,0 +1,63 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+.name {
+  display: inline-block;
+  vertical-align: top;
+  width: 4em;
+  margin-right: 35px;
+  padding: 5px;
+  position: relative;
+}
+.name:before {
+  position: absolute;
+  top: 12px;
+  right: 100%;
+  content: '';
+  width: 12px;
+  height: 1px;
+  background: black;
+}
+.bloc:not(.no-child) > .name:after {
+  position: absolute;
+  top: 12px;
+  left: 100%;
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: black;
+}
+.children {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 4em;
+}
+.children:before {
+  content: '';
+  position: absolute;
+  left: -13px;
+  width: 1px;
+  top: 12px;
+  bottom: 12px;
+  background-color: black;
+}
+.bloc {
+  position: relative;
+}
+.bloc:last-child:before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  width: 3px;
+  top: 13px;
+  bottom: 12px;
+  background-color: white;
+}

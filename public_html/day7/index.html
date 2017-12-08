@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advent of code - day 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="day7.css">
+  </head>
+  <body>
+    <script type="text/template" id="bloc-template">
+      <div class="bloc bloc-parent<% if (!children) { %> no-child<% } %>" id="<%= id %>-parent" data-name="<%= id %>">
+        <div class="name">
+          <%= id %>
+        </div><% if (children) { %><div class="children">
+            <% for (var i=0; i<children.length; i++) { %>
+              <div class="bloc" id="<%= children[i] %>" data-name="<%= id %>">
+              </div>
+            <% } //endfor %>
+          </div>  
+        <% } //endif %>
+      </div>
+    </script>
+    <h1>Advent of code - day 7</h1>
+    <div id="schema"></div>
+    <script src="../js/vendors.js"></script>
+    <script src="day7.js"></script>
+  </body>
+</html>
