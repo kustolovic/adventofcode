@@ -1,0 +1,89 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+#log {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.log {
+  margin: 14px 0;
+  text-align: center;
+  width: 15%;
+  position: relative;
+  counter-increment: log;
+}
+.log:before {
+  content: counter(log);
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  width: 50px;
+  height: 36px;
+  background: #aaa;
+  color: white;
+  border-radius: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  padding-top: 14px;
+}
+.log .line {
+  display: block;
+  font-family: monospace;
+  padding: 6px 6px 6px 24px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.log .var {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: #eeeef6;
+  border-radius: 5px;
+}
+.log .value {
+  font-family: monospace;
+}
+.success {
+  color: #009999;
+}
+.fail {
+  color: #cc0033;
+}
+.result {
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 110em){
+  .log {
+    width: 18%;
+  }
+}
+@media only screen and (max-width: 90em){
+  .log {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 72em){
+  .log {
+    width: 31%;
+  }
+}
+@media only screen and (max-width: 52em){
+  .log {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 36em){
+  .log {
+    width: 98%;
+  }
+}
