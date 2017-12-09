@@ -1,0 +1,57 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+  perspective: 300px;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+.group {
+  padding: 2px;
+  display: block;
+  background-color: rgba(0,0,0,0.1);
+  margin: 5px;
+  min-height: 1.4em;
+  min-width: 1.4em;
+}
+.group .group .group .group {
+  display: inline-block;
+  vertical-align: middle;
+}
+.group .group .group .group .group .group span {
+  color: white;
+}
+#stream {
+  max-width: 1200px;
+  margin: 0 auto;
+  /*transform: rotateX(10deg);*/
+}
+@media only screen and (max-width: 100em){
+  .log {
+    width: 18%;
+  }
+}
+@media only screen and (max-width: 90em){
+  .log {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 72em){
+  .log {
+    width: 31%;
+  }
+}
+@media only screen and (max-width: 52em){
+  .log {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 36em){
+  .log {
+    width: 98%;
+  }
+}
