@@ -1,0 +1,44 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+#results, #phrases {
+  max-width: 600px;
+  margin: 1em auto;
+}
+#phrases {
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+.phrase {
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  position: relative;
+}
+.phrase.success {
+  background-color: #dfe;
+}
+.phrase.fail {
+  background-color: #fde;
+}
+.phrase.fail2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fde;
+  z-index: 0;
+}
+.phrase span {
+  position: relative;
+  z-index: 1;
+}
