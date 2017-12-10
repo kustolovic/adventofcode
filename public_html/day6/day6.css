@@ -1,0 +1,72 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+#memory {
+  text-align: center;
+  min-height: 240px;
+}
+.bank {
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 50px;
+  margin: 0 4px;
+}
+.count {
+  background-color: #f0f0f0;
+  padding: 3px 5px;
+}
+.blocks {
+  padding: 4px;
+}
+.block {
+  height: 10px;
+  margin-bottom: 2px;
+  background-color: #ff9999;
+}
+#clone {
+  text-align: center;
+  margin: 10px 0;
+  min-height: 60px;
+}
+#clone .bank {
+  display: inline-flex;
+  flex-flow: row;
+  width: auto;
+}
+#clone .block {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 40px;
+  margin: 0 2px 0 0;
+}
+#logs {
+  max-width: 450px;
+  margin: 2em auto;
+}
+.log {
+  border: 1px solid #ccc;
+  padding-right: 30px;
+  margin-bottom: 2px;
+}
+.log .num {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 6px;
+  min-width: 2.8em;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 36em){
+  .log {
+    width: 98%;
+  }
+}
