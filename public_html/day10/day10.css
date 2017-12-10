@@ -1,0 +1,104 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #ff9966;
+  margin: 0 0 1em;
+}
+#knot {
+  width: 1100px;
+  height: 1100px;
+  margin: 2em auto;
+  position: relative;
+}
+.el {
+  position: absolute;
+  text-align: right;
+  left: 50%;
+  top: 50%;
+  right: 0;
+  height: 34px;
+  margin-top: -17px;
+  transform-origin: left center;
+}
+.el:nth-child(4n+2){
+  right: 2.5em;
+}
+.el:nth-child(4n+3){
+  right: 5em;
+}
+.el:nth-child(4n){
+  right: 7.5em;
+}
+.el .val {
+  display: block;
+  width: 34px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-size: 0.875em;
+  padding-top: 7px;
+  border-radius: 40px;
+}
+.el .val.active {
+  background-color: #ff9966;
+}
+#infos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+a.calc,
+a.tye {
+  display: inline-block;
+  background-color: #ff9966;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+.length {
+  display: inline-block;
+  margin: 0 0.25em;
+  padding: 4px 7px;
+}
+.length.active {
+  background-color: #ff9966;
+  color: white;
+}
+.result {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+}
+#lengths {
+  white-space: nowrap;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#lengths.hash {
+  white-space: normal;
+}
+#loop {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 2.2em;
+  font-weight: 200;
+  color: #ff9966;
+  border: 1px solid #ff9966;
+  width: 2em;
+  height: 1.7em;
+  padding-top: 0.3em;
+  text-align: center;
+  border-radius: 200px;
+}
